@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(52, 52, 73);
+    color: rgb(231, 255, 255);
+    font-family: "video", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 160%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+h2 {
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+strong {
+    font-weight: 400;
+}
+
+ul,ol {
+    padding-bottom: 40px;
+}

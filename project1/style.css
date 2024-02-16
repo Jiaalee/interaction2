@@ -1,0 +1,98 @@
+body {
+    background-image: url("page.jpeg");
+    background-position: center;
+    background-size: cover; /* or background-size: 100% 100%; */
+    border: none;
+    padding: 0%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.elements h1 {
+    color: #000;
+    font-family: "Sometype Mono";
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title {
+    color: #000;
+    font-family: "Sometype Mono";
+    font-size: 4vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.author {
+    color: #000;
+    font-family: "Sometype Mono";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.start {
+    color: #000;
+    font-family: "Give You Glory";
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transform: rotate(0.7turn);
+}
+
+.home {
+    position: relative;
+    top: 100px;
+    left: 60%;
+}
+
+.elements {
+    top: 10%;
+    left: 10%;
+    position: absolute;
+}
+
+a:hover {
+    transform: scale(1.5);
+}
+
+.page1-content1{
+    color: #000;
+    font-family: "Sometype Mono";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.text {
+    font-family: "Sometype Mono";
+    text-decoration: none;
+    border: none;
+    font-size: 3vw;
+    font-weight: 500;
+    background: none;
+    position: absolute;
+}
+
+.hidden1 {
+    color: #000;
+    font-family: "Give You Glory";
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 125% */
+
+}
