@@ -8,26 +8,30 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     font-family:"Sometype Mono";
-    
 }
+
 
 
 .elements h1 {
     color: #000;
     font-family: "Sometype Mono";
-    font-size: 8vw;
+    font-size: 7vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    top: -3vw;
+    position: relative;
 }
 
 .title {
+    position: relative;
     color: #000;
     font-family: "Sometype Mono";
     font-size: 4vw;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
+    top: -5vw;
 }
 
 .author {
@@ -37,11 +41,12 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 10px;
+    top: -3vw;
+    position: relative;
 }
 
 .start {
-    margin-top: 4vh;
+    margin-top: 3vh;
     color: #000;
     font-family: "Give You Glory";
     font-size: 8vw;
@@ -55,9 +60,10 @@ body {
 
 .home {
     position: relative;
-    top: 100px;
+    top: 3vw;
     left: 60%;
 }
+
 
 .home img {
     margin-top: 20px;
@@ -83,11 +89,12 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
-    font-size: 2.5vw;
+    font-size: clamp(15px,2.5vw,100px);
     text-align: left;
     line-height: 125%;
     position: relative;
     left: 15vw;
+    width: 70vw;
   }
 
 section {
@@ -108,28 +115,350 @@ section {
     display: none;
 }
 
-.hidden1, .hidden2, .hidden3 {
+.hidden {
     display: none;
-}
-
-.trigger-1, .trigger-2, .trigger-3, .trigger-4 {
-    font-weight: 500;
-    text-decoration: underline;
-}
-
-
-.trigger-1:hover + .hidden1
-{
-    display: block;
     color: #000;
     font-family: "Give You Glory";
-    font-size: 40px;
+    font-size: 2.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 125% */
+    text-align: center;
+}
+
+.trigger {
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content1 {
+    position: relative;
+}
+
+.hidden1 img {
+    position: relative;
+    width: 15vw;
+    bottom: 16vw;
+    left: -30vw;
+}
+
+.hidden6 img{
+    position: relative;
+    width: 20vw;
 
 }
 
-.trigger-2:hover + .hidden2 {
+
+
+/* Modified the code from Codepen by Erin E. Sullivan */
+.heartbeat {
+    animation: text-shadow 1.5s ease-in-out infinite;
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #5a5a5a, 
+            0 0 0 #d8d8d8, 
+            0 0 0 #8e1818, 
+            0 0 0 #ffffff;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #5a5a5a, 
+            0 0.25em 0 #d8d8d8, 
+            0 -0.125em 0 #712121, 
+            0 -0.25em 0 #ffffff;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #5a5a5a, 
+            0 -0.125em 0 #d8d8d8, 
+            0 0.0625em 0 #712121, 
+            0 0.125em 0 #ffffff;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #5a5a5a, 
+            0 0.0625em 0 #d8d8d8, 
+            0 -0.03125em 0 #712121, 
+            0 -0.0625em 0 #ffffff;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #5a5a5a, 
+            0 0 0 #d8d8d8, 
+            0 0 0 #712121, 
+            0 0 0 #ffffff;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+@keyframes twitch {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, -5px); }
+    50% { transform: translate(5px, 5px); }
+    75% { transform: translate(-5px, 5px); }
+    100% { transform: translate(5px, -5px); }
+  }
+  
+  .twitch-image {
+    animation: twitch 0.3s ease-in-out infinite alternate; 
+  }
+
+  .hidden9 {
+    overflow:hidden;
+    
+  }
+
+  .fade {
+    transform: scale(0.94);
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .fade-trigger {
+    animation: none; /* Remove animation by default */
+  }
+  
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+        filter: blur(4px);
+      }
+
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+
+
+  #trigger {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+
+@keyframes fade-in2 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden.show {
     display: block;
+    animation: fade-in 0.2s ease-in-out;
 }
+
+.toggleText {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.toggleText::after {
+    content: 'semicolon';
+}
+
+.toggleText.checked::after {
+    content: ';';
+}
+
+.flipX {
+    animation: 1s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+
+  .slide {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 2%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-top: 1%;
+      width: 100%;
+    }
+    
+    0% {opacity: 0}
+    20% {opacity: 0.2}
+    40% {opacity: 0.4}
+    60% {opacity: 0.6}
+    80% {opacity: 0.8}
+    100% {opacity: 1}
+    
+    
+  }
+
+  #fadeDiv {
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out; /* Apply transition for smooth fade */
+}
+
+.fade-out {
+    opacity: 0; /* Make div invisible */
+}
+
+#triggerWord {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+@keyframes colorChange {
+    0% { color: #276da2; }
+    50% { color: #ff6347; }
+    100% { color: #359374; }
+}
+
+.animated-text {
+    animation: colorChange 3s infinite; /* Apply animation for continuous color change */
+}
+
+@keyframes distort {
+    0% { transform: scale(1); }
+    25% { transform: skewX(20deg); }
+    50% { transform: skewY(20deg); }
+    75% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+.distorting-text {
+    position: absolute;
+    animation: distort 2s infinite; /* Apply animation for continuous distortion */
+}
+
+.typing {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(49, 49, 49) }
+}
+
+@keyframes fadingIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fading-in-text {
+    animation: fadingIn 2s ease-in-out; /* Apply animation for fading in */
+    animation-fill-mode: forwards; /* Keep opacity at 1 after animation ends */
+    opacity: 0; /* Start with opacity 0 */
+}
+
+/* Adjust styles for the second word */
+.fading-in-text:nth-child(2) {
+    animation-delay: 1s; /* Delay the animation for the second word */
+}
+
+#spin {
+    font-weight: 500;
+  }
+  #spin:after {
+    content:"";
+    animation: spin 4s linear infinite;
+  }
+  @keyframes spin {
+    0%, 60% { content:"ages,";}
+    60%, 70% { content:"cultures,";} 
+    70%, 100% { content:"aesthetic schools,";}
+  }
+
+  .hidden26 {
+    color: #8e1841;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .navbar {
+
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 2vw; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    right: 1vw;
+
+  }
+
+  .navbar a {
+    float: right;
+    margin: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transform: rotate(90deg);
+    font-size: 2.5vw;
+    color: #000;
+  }
+
+  .navbar a:hover {
+    transform: scale(1.5);
+  }
