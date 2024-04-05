@@ -1,0 +1,36 @@
+body {
+  background-image: url("img/name.JPG");
+  background-position: center;
+  background-size: cover;
+  border: none;
+  padding: 0%;
+  margin: 0;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: scroll;
+}
+
+
+.heading {
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+
+img {
+  max-width: 50vw;
+  max-height: 55vw;
+}
+
+
+.img {
+  position: relative;
+}
+
+.draggable {
+  position: absolute;
+  cursor: move;
+}
+

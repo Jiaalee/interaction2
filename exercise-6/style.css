@@ -1,0 +1,46 @@
+.square-1 {
+    width: 30vw;
+    height: 30vw;
+    background-color: aliceblue;
+    position: relative;
+    margin: 10px;
+}
+
+.square-2 {
+    width: 24vw;
+    height: 24vw;
+    background-color: brown;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -55%);
+}
+
+.square-3 {
+    width: 18vw;
+    height: 18vw;
+    background-color:aqua;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -55%);
+}
+
+.square-4 {
+    width: 12vw;
+    height: 12vw;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -55%);
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.row {
+    display: flex;
+      flex-wrap: wrap;
+}
