@@ -59,6 +59,8 @@ img {
   font-size: 1.5vw;
   border-radius: 5px;
   visibility: hidden;
+  font-family: "bitter";
+  font-weight: 300;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   
