@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/name.JPG");
+  background-image: url("img/name.png");
   background-position: center;
   background-size: cover;
   border: none;
@@ -17,7 +17,16 @@ body {
     font-weight: 400;
     font-style: normal;
     color: white;
+    font-size: 4vw;
+    position: relative;
+    margin-left: 5vw;
   }
+
+.outline {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
 
 img {
   max-width: 50vw;
@@ -25,12 +34,224 @@ img {
 }
 
 
+
+
 .img {
+  margin-top: 10vw;
   position: relative;
+  display: inline-block
 }
 
-.draggable {
+.image-container {
   position: absolute;
-  cursor: move;
+  
 }
 
+
+.hidden-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 25px;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+.image-container:hover .hidden-message {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#img1 {
+  position: absolute;
+  top: -10vw;
+  left: 5vw;
+}
+
+#img2 {
+  position: absolute;
+  top: 30vw;
+  left: 15vw;
+}
+
+#img3 {
+  position: absolute;
+  top: 50vw;
+  left: 25vw;
+}
+
+#img4 {
+  position: absolute;
+  top: 70vw;
+  left: 35vw;
+}
+
+#img5 {
+  position: absolute;
+  top: 20vw;
+  left: 45vw;
+}
+
+#img6 {
+  position: absolute;
+  top:-20vw;
+  left: 55vw;
+}
+
+#img7 {
+  position: absolute;
+  top: 60vw;
+  left: 65vw;
+}
+
+#img8 {
+  position: absolute;
+  top: 80vw;
+  left: 0vw;
+}
+
+#img9 {
+  position: absolute;
+  top: 90vw;
+  left: 0vw;
+}
+
+#img10 {
+  position: absolute;
+  top: 70vw;
+  right: 15vw;
+}
+
+#img11 {
+  position: absolute;
+  top: 20vw;
+  right: 25vw;
+}
+
+#img12 {
+  position: absolute;
+  top: 40vw;
+  right: 35vw;
+}
+
+#img13 {
+  position: absolute;
+  top: 60vw;
+  right: 45vw;
+}
+
+#img14 {
+  position: absolute;
+  top: 30vw;
+  right: 55vw;
+}
+
+#img15 {
+  position: absolute;
+  top: 50vw;
+  right: 65vw;
+}
+
+#img16 {
+  position: absolute;
+  top: 10vw;
+  right: 75vw;
+}
+
+#img17 {
+  position: absolute;
+  top: 80vw;
+  left: 15vw;
+}
+
+#img18 {
+  position: absolute;
+  top: 100vw;
+  left: 25vw;
+}
+
+/* Continue adding styles for images #19 to #30 */
+/* Adjust positions as needed */
+
+
+
+
+#img19 {
+  position: absolute;
+  top: 5vw;
+  left: 25vw;
+}
+
+#img20 {
+  position: absolute;
+  top: 25vw;
+  left: 65vw;
+}
+
+#img21 {
+  position: absolute;
+  top: 45vw;
+  left: 55vw;
+}
+
+#img22 {
+  position: absolute;
+  top: 65vw;
+  left: 45vw;
+}
+
+#img23 {
+  position: absolute;
+  top: 85vw;
+  left: 35vw;
+}
+
+#img24 {
+  position: absolute;
+  top: 10vw;
+  right: 55vw;
+}
+
+#img25 {
+  position: absolute;
+  top: 30vw;
+  right: 65vw;
+}
+
+#img26 {
+  position: absolute;
+  top: 50vw;
+  right: 55vw;
+}
+
+#img27 {
+  position: absolute;
+  top: 70vw;
+  right: 45vw;
+}
+
+#img28 {
+  position: absolute;
+  top: 90vw;
+  right: 35vw;
+}
+
+#img29 {
+  position: absolute;
+  top: 5vw;
+  right: 35vw;
+}
+
+#img30 {
+  position: absolute;
+  top: 25vw;
+  right: 44vw;
+}
