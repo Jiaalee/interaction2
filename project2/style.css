@@ -56,7 +56,7 @@ img {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 25px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   border-radius: 5px;
   visibility: hidden;
   font-family: "bitter";
@@ -111,18 +111,18 @@ img {
 #img7 {
   position: absolute;
   top: 60vw;
-  left: 65vw;
+  left: 25vw;
 }
 
 #img8 {
   position: absolute;
-  top: 80vw;
+  top: -20vw;
   left: 0vw;
 }
 
 #img9 {
   position: absolute;
-  top: 90vw;
+  top: 60vw;
   left: 0vw;
 }
 
@@ -144,11 +144,6 @@ img {
   right: 35vw;
 }
 
-#img13 {
-  position: absolute;
-  top: 60vw;
-  right: 45vw;
-}
 
 #img14 {
   position: absolute;
@@ -159,7 +154,7 @@ img {
 #img15 {
   position: absolute;
   top: 50vw;
-  right: 65vw;
+  right: 35vw;
 }
 
 #img16 {
@@ -170,18 +165,15 @@ img {
 
 #img17 {
   position: absolute;
-  top: 80vw;
+  top: 60vw;
   left: 15vw;
 }
 
 #img18 {
   position: absolute;
-  top: 100vw;
+  top: 30vw;
   left: 25vw;
 }
-
-/* Continue adding styles for images #19 to #30 */
-/* Adjust positions as needed */
 
 
 
@@ -195,13 +187,13 @@ img {
 #img20 {
   position: absolute;
   top: 25vw;
-  left: 65vw;
+  left: 25vw;
 }
 
 #img21 {
   position: absolute;
   top: 45vw;
-  left: 55vw;
+  left: 35vw;
 }
 
 #img22 {
@@ -212,14 +204,14 @@ img {
 
 #img23 {
   position: absolute;
-  top: 85vw;
+  top: 15vw;
   left: 35vw;
 }
 
 #img24 {
   position: absolute;
   top: 10vw;
-  right: 55vw;
+  right: 15vw;
 }
 
 #img25 {
@@ -231,20 +223,15 @@ img {
 #img26 {
   position: absolute;
   top: 50vw;
-  right: 55vw;
+  right: 35vw;
 }
 
 #img27 {
   position: absolute;
   top: 70vw;
-  right: 45vw;
+  right: 11vw;
 }
 
-#img28 {
-  position: absolute;
-  top: 90vw;
-  right: 35vw;
-}
 
 #img29 {
   position: absolute;
@@ -255,5 +242,5 @@ img {
 #img30 {
   position: absolute;
   top: 25vw;
-  right: 44vw;
+  right: 34vw;
 }
