@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
         blob2: "#ff834a",
         blob3: "#ffe986",
         blob4: "#fff4eb",
-        circle: "#ffcb93"
     };
 
     var circles = document.querySelectorAll('.circle');
